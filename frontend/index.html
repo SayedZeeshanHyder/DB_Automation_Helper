@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Database Query Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="[https://cdn.jsdelivr.net/npm/chart.js](https://cdn.jsdelivr.net/npm/chart.js)"></script>
+    <script src="[https://cdn.jsdelivr.net/npm/marked/marked.min.js](https://cdn.jsdelivr.net/npm/marked/marked.min.js)"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Database Query Assistant 🤖</h1>
+        <div class="form-container">
+            <input type="text" id="dbUrl" placeholder="Enter Database URL (e.g., postgresql://user:pass@host/db)">
+            <textarea id="prompt" placeholder="Enter your prompt... e.g., 'Show me all users from California and generate a report.'"></textarea>
+            <button id="submitBtn">Submit Query</button>
+        </div>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="response-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
